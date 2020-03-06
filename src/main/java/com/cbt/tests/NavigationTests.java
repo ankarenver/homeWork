@@ -20,7 +20,7 @@ public class NavigationTests {
          */
 
 //        testForChrome();
-        testForFirefox();
+//        testForFirefox();
 //        testForEdge();
 
 
