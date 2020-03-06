@@ -2,6 +2,7 @@ package com.cbt.utilities;
 
 import org.openqa.selenium.WebDriver;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -13,9 +14,10 @@ public class TitleVerification {
                 "http://practice.cybertekschool.com/login");
 
         WebDriver driver = BrowserFactory.getDriver("chrome");
-        String[] titles = new String[3];
+        List<String> titles = new ArrayList<>();
         for (String each : urls){
             driver.get(each);
+            titles.add(driver.getTitle());
             System.out.println(each.startsWith("http://practice.cybertekschool.com"));
             driver.close();
 

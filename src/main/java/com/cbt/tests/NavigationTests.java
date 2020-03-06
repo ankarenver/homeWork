@@ -19,9 +19,10 @@ public class NavigationTests {
          * 9. Verify that title is same is in step 5
          */
 
-        testForChrome();
-//        testForFirefox();
+//        testForChrome();
+        testForFirefox();
 //        testForEdge();
+
 
 
 
